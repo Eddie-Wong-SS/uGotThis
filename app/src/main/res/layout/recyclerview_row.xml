@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Specifies the xml for each row of data shown in the recycler view -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lister"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_ripple"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:focusable="false"
+    android:padding="@dimen/_16sdp">
+
+        <!-- Shows list of tasks -->
+        <ImageView
+            android:id="@+id/task_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_alignLeft="@id/task_view"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/taskview" />
+
+        <TextView
+            android:id="@+id/task_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_img"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_weight="3"
+            android:width="0dp"
+            android:background="#FFFFFF"
+            android:paddingLeft="8sp" />
+        <!-- Sets checklist -->
+        <ImageView
+            android:id="@+id/compImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/task_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toStartOf="@+id/task_view"
+            android:tag="checks"
+            android:focusableInTouchMode="false"
+
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:width="0dp"
+            android:paddingRight="8sp"
+            app:srcCompat="@drawable/ic_unchecked" />
+</RelativeLayout>

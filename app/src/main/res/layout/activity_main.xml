@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Specifies the XML for the login page -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LogIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:text="@string/Login"
+        android:textAlignment="center"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Label for password -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="48dp"
+        android:text="@string/log_pass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+    <!-- Field to enter password -->
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:ems="10"
+        android:inputType="textPassword"
+
+        android:textColor="@color/edit_appearance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+    <!-- Button to log in user -->
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/glass_button"
+        android:onClick="loginCheck"
+        android:text="@string/Login"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Button to Register New User -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/glass_button"
+        android:onClick="signUp"
+        android:text="@string/title_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Background at login for aesthetic effect -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:srcCompat="@drawable/task_bg" />
+    <!-- ProgressBar to assure users the app is working correctly -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Label for email-->
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+    <!-- Field to enter email -->
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/edit_appearance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="@string/log_tutorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

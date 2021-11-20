@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">uGotThis</string>
+    <string name="title_home">Home</string>
+    <string name="title_register">Register New</string>
+    <string name="title_tasklist">Task List(Tap to check box,\n hold for more options)\nShake to mark all complete/incomplete</string>
+    <string name="label_tasklist">Task List</string>
+    <string name="title_newtask">Create New Task</string>
+    <string name="reg_name">Username: </string>
+    <string name="reg_pass">Password(At least 8 chars): </string>
+    <string name="log_pass">Password: </string>
+    <string name="reg_con_pass">Confirm Password: </string>
+    <string name="Register">Register: </string>
+    <string name="Greeting">Welcome, </string>
+    <string name="Logout">Log Out</string>
+    <string name="Login">Login</string>
+    <string name="task_name">Task Name: </string>
+    <string name="task_descrip">Task Description: </string>
+    <string name="task_make">Create</string>
+    <string name="list_task">Tasks</string>
+    <string name="complete">Complete?</string>
+    <string name="email">Email: </string>
+    <string name="log_tutorial">Pinch to zoom in/out\nDrag to scroll! (In all pages)</string>
+    <string name="reg_tut">Swipe left to return! Shake to refresh</string>
+    <string name="main_tutorial">Pinch to zoom in/out Swipe to change pages!\nShake to refresh Drag to scroll!(In all pages)</string>
+    <string name="task_desc_lim">Only 250 characters allowed</string>
+</resources>
